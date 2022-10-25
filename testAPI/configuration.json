@@ -1,0 +1,52 @@
+{
+  "ReRoutes": [
+
+    //user api config
+    {
+      "DownstreamPathTemplate": "/api/user/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44372"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/user/{everything}",
+      "Key": "User",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "TestKey",
+        "AllowedScopes": []
+      }
+    },
+    //product api config
+    {
+      "DownstreamPathTemplate": "/api/product/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44375"
+        }
+      ],
+      // "UpstreamPathTemplate": "/GetProducts"
+      "UpstreamPathTemplate": "/api/product/{everything}"
+    },
+    //payment api config
+    {
+      "DownstreamPathTemplate": "/api/payment/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44344"
+        }
+      ],
+      //"UpstreamPathTemplate": "/getpayment/{everything}"
+      "UpstreamPathTemplate": "/api/payment/{everything}"
+    }
+  ],
+  "GlobalConfiguration": {
+    "RequestIdKey": "OcRequestId",
+    "AdministrationPath": "/administration"
+  }
+}
