@@ -11,6 +11,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OcelotApiGateway", "testAPI
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "User.WebAPI", "User.WebAPI\User.WebAPI.csproj", "{E7975766-87D2-4412-B1D7-4330DFA28FB9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JwtAuthenticationManager", "JwtAuthenticationManager\JwtAuthenticationManager.csproj", "{B6A984BC-924F-486E-9245-E3CD698C6638}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationWebApi", "AuthenticationWebApi\AuthenticationWebApi.csproj", "{D32ABC24-CC14-4554-950C-3007434065E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomersWebApi", "CustomersWebApi\CustomersWebApi.csproj", "{D310DEE2-2C6E-4900-8F73-5CD8DAAFF977}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +39,18 @@ Global
 		{E7975766-87D2-4412-B1D7-4330DFA28FB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7975766-87D2-4412-B1D7-4330DFA28FB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7975766-87D2-4412-B1D7-4330DFA28FB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6A984BC-924F-486E-9245-E3CD698C6638}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6A984BC-924F-486E-9245-E3CD698C6638}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6A984BC-924F-486E-9245-E3CD698C6638}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6A984BC-924F-486E-9245-E3CD698C6638}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D32ABC24-CC14-4554-950C-3007434065E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D32ABC24-CC14-4554-950C-3007434065E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D32ABC24-CC14-4554-950C-3007434065E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D32ABC24-CC14-4554-950C-3007434065E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D310DEE2-2C6E-4900-8F73-5CD8DAAFF977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D310DEE2-2C6E-4900-8F73-5CD8DAAFF977}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D310DEE2-2C6E-4900-8F73-5CD8DAAFF977}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D310DEE2-2C6E-4900-8F73-5CD8DAAFF977}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
