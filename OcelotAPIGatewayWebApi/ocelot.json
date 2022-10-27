@@ -35,6 +35,7 @@
       ],
       "UpstreamPathTemplate": "/api/customer/GetPrivateCustomer",
       "UpstreamHttpMethod": [ "Get", "Post" ]
+
     },
     {
       "DownstreamPathTemplate": "/api/customer/GetCommonCustomer",
@@ -49,5 +50,19 @@
       "UpstreamHttpMethod": [ "Get", "Post" ]
     }
   ],
-  "GlobalConfiguration": {}
+  "GlobalConfiguration": {},
+
+
+  //"AuthenticationOptions": {
+  //  "AuthenticationProviderKey": "TestKey",
+  //  "AllowedScopes": []
+  //}
+
+  //"RateLimitOptions": {
+  //  "ClientWhitelist": [],
+  //  "EnableRateLimiting": true,
+  //  "Period": "1s",
+  //  "PeriodTimespan": 1,
+  //  "Limit": 1
+  //}
 }

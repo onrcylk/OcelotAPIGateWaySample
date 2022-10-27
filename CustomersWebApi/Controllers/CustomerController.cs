@@ -28,7 +28,8 @@ namespace CustomersWebApi.Controllers
         }
 
         [HttpGet("GetPrivateCustomer")]
-        [Authorize(Roles="Administrator")]
+        [AllowAnonymous]
+        //[Authorize(Roles="Administrator")]
         public JsonResult GetPrivateCustomer()
         {
             var model = new Customer()
