@@ -28,7 +28,7 @@ namespace CustomersWebApi.Controllers
         }
 
         [HttpGet("GetPrivateCustomer")]
-        [Authorize(Roles="Adminstrator")]
+        [Authorize(Roles="Administrator")]
         public JsonResult GetPrivateCustomer()
         {
             var model = new Customer()
@@ -46,7 +46,7 @@ namespace CustomersWebApi.Controllers
             });
         }
         [HttpGet("GetCommonCustomer")]
-        [Authorize(Roles = "Adminstrator,User")]
+        [Authorize(Roles = "Administrator,User")]
         public JsonResult GetCommonCustomer()
         {
             var model = new Customer()
